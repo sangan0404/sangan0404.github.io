@@ -1,0 +1,134 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	background-color:mistyrose;
+	font-family:Malgun Gothic;
+}
+h2{
+	text-align:left;
+	font-family:Perpetua;
+}
+h1{		
+	text-align:center;
+	font-family:Lucida Sans;
+}
+p{ 
+	font-family: Cambria;
+}
+header{
+	background-image: url('headerimg1.jpg');
+	background-size: cover;
+	padding: 100px;
+	width:width-device;
+	text-align: center;
+	font-family: cambria;
+	color: mistyrose;
+	font-size: 60px;
+	text-shadow: 4px 3px 3px #F10EB1;
+	
+}
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+nav{	
+	background-color:#E7A1A1;
+	font-size:110%;
+	padding:0px 0px;
+	justify-content: space-around;
+	display: flex;
+}
+nav ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+a {
+	display: block;
+	padding:3px;
+	text-decoration:none;
+	color:black;
+}
+a:hover, .dropdown:hover .dropbtn {
+	color:black;
+}
+.dropdown {
+ 	float: left;
+	overflow: hidden;
+}
+.dropdown .dropbtn {
+	font-size: 100%;
+	border: none;
+	outline: none;
+	color: black;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit; 
+	margin: 0;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: mistyrose;
+	min-width: 140px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 10px 14px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.dropdown-content a:hover {
+	background-color: #F2BEE5;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+article{
+	float:left;
+	width:75%;
+	height:800px;
+	background-color:mistyrose;
+	padding:20px;
+	font-size:120%;
+	text-align:center;
+	color:black;
+}
+section:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+aside{
+	background-color:#F2BEE5;
+	color:black;
+	width:25%;
+	height:800px;
+	float:left;
+	font-size:110%;
+	border: solid mistyrose;
+ 	border-width: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+}
+@media(max-width:800px){
+	nav,article,aside{
+		width:100%;
+		height:auto;
+	}
+}	
+footer{
+	background-color:#E7A1A1;
+	padding:10px;
+	font-family:Lucida Sans;
+	text-align:center;
+	color:black;
+	}
+#more {display: none;}
